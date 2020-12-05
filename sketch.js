@@ -3,11 +3,13 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var ground1,box1,box2,box3,paper1
+var ground1,box1,box2,box3,paper1,boximage,paperimage;
 
 function preload()
 {
 	boximage = loadImage('box.png');
+	paperimage = loadImage('papaer.png');
+	
 }
 
 function setup() {
@@ -45,6 +47,7 @@ function draw() {
 	box1.display();
 	box2.display();
 	image(boximage,1000,330,200,200);
+	paper1.addImage('paperimage');
 	paper1.display();
 	
  
