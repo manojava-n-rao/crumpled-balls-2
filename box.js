@@ -15,6 +15,7 @@ class Box  {
       push();
         var pos2= this.body.position;
         translate(pos2.x,pos2.y);
+        //.addImage()
     rectMode(CENTER);
         fill("red");
        rect(0,0,this.width,this.height);
